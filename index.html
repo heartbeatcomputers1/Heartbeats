@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeartbeatComputers | Sales & Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="menu-wrapper">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list">☰ Menu</button>
+      <nav id="menu-list" class="menu" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#spares">Spares</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+        <a href="#warranty">Warranty</a>
+        <a href="#admin">Admin</a>
+        <a href="#cart">Cart</a>
+      </nav>
+    </div>
+    <div class="branding">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 120 110" role="presentation">
+          <defs>
+            <linearGradient id="heartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ff5a6f"/>
+              <stop offset="100%" stop-color="#d3142b"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#heartGradient)" d="M60 104s-6.5-5.7-14.3-12.6C29 78.2 12 62.8 12 41.5 12 24.8 25.6 12 41.2 12c8.1 0 15.3 3.9 18.8 10.7C63.5 15.9 70.7 12 78.8 12 94.4 12 108 24.8 108 41.5c0 21.3-17 36.7-33.7 49.9C66.5 98.3 60 104 60 104z"/>
+          <polyline fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="20,56 35,56 42,40 50,76 60,30 72,80 82,56 100,56"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">HeartbeatComputers</span>
+        <span class="brand-tag">Sales • Service • Care</span>
+      </div>
+    </div>
+    <div class="cta-inline">
+      <a class="btn ghost" href="#contact">Get Support</a>
+      <a class="btn primary" href="#products">Shop Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Trusted tech in Pokhara</p>
+        <h1>Keep your heartbeat running with reliable computers & service.</h1>
+        <p class="lede">Sales, upgrades, repairs, and on-call support tailored to your business and home needs. Fast turnaround, transparent pricing.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#products">Browse computers</a>
+          <a class="btn ghost" href="#services">Book a service</a>
+        </div>
+        <div class="hero-meta">
+          <div>Primary: <a href="tel:+9779826269857">+977-9826-269857</a> | <a href="tel:+9779768455580">+977-9768-455580</a></div>
+          <div>Email: <a href="mailto:heartbeatcomputers1@gmail.com">heartbeatcomputers1@gmail.com</a></div>
+          <div>Location: Near tourist bus park, Rastra Bank Chowk, Pokhara, Nepal 17</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="heartbeat-line" aria-hidden="true"></div>
+        <div class="hero-card">
+          <h3>Same-day diagnostics</h3>
+          <p>Quick health checks and quotes before you commit.</p>
+        </div>
+        <div class="hero-card">
+          <h3>Care plans</h3>
+          <p>Preventive maintenance to keep systems stable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="value-card">
+        <h3>Genuine parts</h3>
+        <p>Brand-authorized components for lasting performance.</p>
+      </div>
+      <div class="value-card">
+        <h3>Transparent pricing</h3>
+        <p>Upfront estimates and approval before work starts.</p>
+      </div>
+      <div class="value-card">
+        <h3>Local & responsive</h3>
+        <p>On-site visits in Pokhara and remote support when you need it.</p>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Shop</p>
+          <h2>Featured computers</h2>
+          <p class="lede">Pre-configured systems with fast delivery and local warranty.</p>
+        </div>
+        <a class="btn ghost" href="#cart">View cart</a>
+      </div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="spares" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Parts</p>
+          <h2>Spares & replacements</h2>
+          <p class="lede">Genuine laptop and desktop parts with install support in Pokhara.</p>
+        </div>
+        <a class="btn ghost" href="#contact">Request a part</a>
+      </div>
+      <div class="spares-grid">
+        <article class="card spare-card">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Laptop battery">
+          <h3>Laptop batteries</h3>
+          <p>Brand-matched replacements with warranty.</p>
+        </article>
+        <article class="card spare-card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Laptop charger">
+          <h3>Chargers & adapters</h3>
+          <p>OEM and high-quality adapters with surge protection.</p>
+        </article>
+        <article class="card spare-card">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=80" alt="Solid state drive">
+          <h3>SSDs & RAM</h3>
+          <p>Upgrades for speed—NVMe, SATA, and DDR4/DDR5 kits.</p>
+        </article>
+        <article class="card spare-card">
+          <img src="https://images.unsplash.com/photo-1587202372775-98927a7fa440?auto=format&fit=crop&w=600&q=80" alt="Laptop screen">
+          <h3>Screens & hinges</h3>
+          <p>Display replacements, hinges, and bezel repairs.</p>
+        </article>
+        <article class="card spare-card">
+          <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&w=600&q=80" alt="Desktop power supply">
+          <h3>Desktop PSUs</h3>
+          <p>Reliable power supplies from 450W to 850W.</p>
+        </article>
+        <article class="card spare-card">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Graphics card">
+          <h3>GPUs & cards</h3>
+          <p>Entry to midrange graphics cards with install support.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cart" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Cart</p>
+          <h2>Your selections</h2>
+          <p class="lede">Client-side cart—checkout via secure payment links.</p>
+        </div>
+        <button id="clear-cart" class="btn ghost" type="button">Clear cart</button>
+      </div>
+      <div id="cart-items" class="cart-items" aria-live="polite"></div>
+      <div class="cart-summary">
+        <div>
+          <p class="total-label">Subtotal</p>
+          <p id="cart-total" class="total-value">NPR 0</p>
+        </div>
+        <div class="cart-actions">
+          <a id="checkout-link" class="btn primary" href="#" target="_blank" rel="noopener">Proceed to checkout</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2>Request service or support</h2>
+          <p class="lede">Describe the issue; we’ll confirm schedule and quote.</p>
+        </div>
+      </div>
+      <form id="service-form" class="card form-card">
+        <div class="form-grid">
+          <label>Full name
+            <input name="name" type="text" required>
+          </label>
+          <label>Email
+            <input name="email" type="email" required>
+          </label>
+          <label>Phone
+            <input name="phone" type="tel" required>
+          </label>
+          <label>Device / model
+            <input name="device" type="text" required>
+          </label>
+          <label>Preferred date
+            <input name="date" type="date">
+          </label>
+          <label>Urgency
+            <select name="urgency">
+              <option>Standard</option>
+              <option>Urgent</option>
+              <option>Critical</option>
+            </select>
+          </label>
+        </div>
+        <label>Issue description
+          <textarea name="details" rows="4" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Submit request</button>
+          <p class="helper">We’ll call back from +977-9826-269857 or email to confirm.</p>
+        </div>
+      </form>
+    </section>
+
+    <section id="contact" class="section split">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Talk to HeartbeatComputers</h2>
+        <p class="lede">Primary phones, email, and shop location at Rastra Bank Chowk.</p>
+        <ul class="contact-list">
+          <li>Primary: <a href="tel:+9779826269857">+977-9826-269857</a></li>
+          <li>Support: <a href="tel:+9779768455580">+977-9768-455580</a></li>
+          <li>Email: <a href="mailto:heartbeatcomputers1@gmail.com">heartbeatcomputers1@gmail.com</a></li>
+          <li>Location: Near tourist bus park, Rastra Bank Chowk, Pokhara, Nepal 17</li>
+        </ul>
+      </div>
+      <form id="contact-form" class="card form-card">
+        <div class="form-grid">
+          <label>Name
+            <input name="name" type="text" required>
+          </label>
+          <label>Email
+            <input name="email" type="email" required>
+          </label>
+          <label>Phone
+            <input name="phone" type="tel">
+          </label>
+        </div>
+        <label>How can we help?
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send</button>
+          <p class="helper">Expect a response within one business day.</p>
+        </div>
+      </form>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Feedback</p>
+          <h2>Trusted by local customers</h2>
+          <p class="lede">Reliability and quick turnarounds keep us recommended.</p>
+        </div>
+      </div>
+      <div class="testimonial-grid">
+        <article class="card">
+          <p>“Diagnosed and fixed my laptop in a day. Honest pricing and clear updates.”</p>
+          <span class="author">— A. Gurung</span>
+        </article>
+        <article class="card">
+          <p>“They set up our office PCs with backups and support. Smooth rollout.”</p>
+          <span class="author">— R. KC</span>
+        </article>
+        <article class="card">
+          <p>“Appreciated the on-site visit in Pokhara. Preventive maintenance saved downtime.”</p>
+          <span class="author">— S. Thapa</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="locations" class="section split">
+      <div>
+        <p class="eyebrow">Visit us</p>
+        <h2>Pokhara service desk</h2>
+        <p class="lede">Near tourist bus park, Rastra Bank Chowk, Pokhara, Nepal 17.</p>
+        <ul class="contact-list">
+          <li>Hours: Sun–Fri 9:00–18:00</li>
+          <li>Walk-ins welcome; appointments prioritized.</li>
+        </ul>
+      </div>
+      <div class="map-placeholder">
+        <iframe title="HeartbeatComputers Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.9462776587834!2d83.9844!3d28.2096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39959652a2a7d78f%3A0x0!2sRastra%20Bank%20Chowk%2C%20Pokhara!5e0!3m2!1sen!2snp!4v00000000000"></iframe>
+      </div>
+    </section>
+
+    <section id="warranty" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Warranty</p>
+          <h2>Check warranty status</h2>
+          <p class="lede">Enter your invoice or serial to request a status check.</p>
+        </div>
+      </div>
+      <form id="warranty-form" class="card form-card">
+        <div class="form-grid">
+          <label>Invoice / Serial
+            <input name="serial" type="text" required>
+          </label>
+          <label>Email
+            <input name="email" type="email" required>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Check status</button>
+          <p class="helper">We’ll email confirmation once verified.</p>
+        </div>
+        <div id="warranty-result" class="helper result"></div>
+      </form>
+    </section>
+
+    <section id="newsletter" class="section split">
+      <div>
+        <p class="eyebrow">Stay updated</p>
+        <h2>Newsletter</h2>
+        <p class="lede">Tips, offers, and service alerts from HeartbeatComputers.</p>
+      </div>
+      <form id="newsletter-form" class="card form-card">
+        <label>Email
+          <input name="email" type="email" required>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Subscribe</button>
+          <p class="helper">No spam. Unsubscribe anytime.</p>
+        </div>
+      </form>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Insights</p>
+          <h2>Blog & news</h2>
+          <p class="lede">Latest updates and maintenance tips.</p>
+        </div>
+      </div>
+      <div id="blog-list" class="blog-grid"></div>
+    </section>
+
+    <section id="admin" class="section">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Admin (local demo)</p>
+          <h2>Manage content</h2>
+          <p class="lede">CRUD stored in your browser (localStorage). No server required.</p>
+        </div>
+      </div>
+      <div class="admin-grid">
+        <article class="card admin-card">
+          <h3>Products</h3>
+          <form id="product-form" class="crud-form" data-entity="products">
+            <input type="hidden" name="id">
+            <div class="form-grid">
+              <label>Name<input name="name" required></label>
+              <label>Spec<input name="spec" required></label>
+              <label>Price (NPR)<input name="price" type="number" min="0" required></label>
+              <label>Payment link<input name="paymentLink" required></label>
+            </div>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Save</button>
+              <button class="btn ghost" type="button" data-reset>Clear</button>
+            </div>
+          </form>
+          <div id="product-admin-list" class="crud-list"></div>
+        </article>
+
+        <article class="card admin-card">
+          <h3>Spares</h3>
+          <form id="spare-form" class="crud-form" data-entity="spares">
+            <input type="hidden" name="id">
+            <div class="form-grid">
+              <label>Name<input name="name" required></label>
+              <label>Description<input name="description" required></label>
+              <label>Image URL<input name="image" required></label>
+            </div>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Save</button>
+              <button class="btn ghost" type="button" data-reset>Clear</button>
+            </div>
+          </form>
+          <div id="spare-admin-list" class="crud-list"></div>
+        </article>
+
+        <article class="card admin-card">
+          <h3>Blog posts</h3>
+          <form id="blog-form" class="crud-form" data-entity="blog">
+            <input type="hidden" name="id">
+            <div class="form-grid">
+              <label>Title<input name="title" required></label>
+              <label>Summary<input name="summary" required></label>
+              <label>Link<input name="link" required></label>
+            </div>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Save</button>
+              <button class="btn ghost" type="button" data-reset>Clear</button>
+            </div>
+          </form>
+          <div id="blog-admin-list" class="crud-list"></div>
+        </article>
+
+        <article class="card admin-card">
+          <h3>Testimonials</h3>
+          <form id="testimonial-form" class="crud-form" data-entity="testimonials">
+            <input type="hidden" name="id">
+            <div class="form-grid">
+              <label>Quote<textarea name="quote" rows="2" required></textarea></label>
+              <label>Author<input name="author" required></label>
+            </div>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Save</button>
+              <button class="btn ghost" type="button" data-reset>Clear</button>
+            </div>
+          </form>
+          <div id="testimonial-admin-list" class="crud-list"></div>
+        </article>
+
+        <article class="card admin-card">
+          <h3>Warranty requests</h3>
+          <form id="warranty-admin-form" class="crud-form" data-entity="warranties">
+            <input type="hidden" name="id">
+            <div class="form-grid">
+              <label>Serial / Invoice<input name="serial" required></label>
+              <label>Email<input name="email" type="email" required></label>
+              <label>Status<input name="status" value="Pending" required></label>
+            </div>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Save</button>
+              <button class="btn ghost" type="button" data-reset>Clear</button>
+            </div>
+          </form>
+          <div id="warranty-admin-list" class="crud-list"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h4>HeartbeatComputers</h4>
+      <p>Near tourist bus park, Rastra Bank Chowk,<br>Pokhara, Nepal 17</p>
+    </div>
+    <div>
+      <p><a href="tel:+9779826269857">+977-9826-269857</a> | <a href="tel:+9779768455580">+977-9768-455580</a></p>
+      <p><a href="mailto:heartbeatcomputers1@gmail.com">heartbeatcomputers1@gmail.com</a></p>
+    </div>
+    <div class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
